@@ -3,6 +3,6 @@ print("Please enter the lengths of the triangle's sides...")
 a = float(input(" - a: "))
 b = float(input(" - b: "))
 c = float(input(" - c: "))
-semiPerimeter = (a + b + c) / 2
-area = (semiPerimeter * (semiPerimeter - a) * (semiPerimeter - b) * (semiPerimeter - c)) ** 0.5
-print(f"...the given triangle has an area of {int(area) if area % 1 == 0 else area}.")
+semiPerimeter = float((a + b + c) / 2.0)
+area = float((semiPerimeter * (semiPerimeter - a) * (semiPerimeter - b) * (semiPerimeter - c)) ** 0.5)
+print(f"...the given triangle has an area of {int(area) if area - round(area) == 0.0 else area}.")
