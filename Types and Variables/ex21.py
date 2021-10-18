@@ -1,3 +1,5 @@
+# Write a program that displays the results of three dice rolls and the sum of the dice rolled. Apply a random number generator.
+
 import random
 
 dice1 = random.randint(1, 6)
