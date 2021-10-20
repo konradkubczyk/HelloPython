@@ -1,7 +1,7 @@
 # The radius of the circle has the value 5. Write a program that calculates the area and circumference of the circle. Use the algorithm below.
 
 # Import math Library
-import math 
+import math
 
 # determine radius and PI
 radius = float(input("Radius:\t\t"))
