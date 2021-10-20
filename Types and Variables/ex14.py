@@ -13,6 +13,5 @@ area = pi * radius ** 2
 # calculate circumference
 circumference = 2 * pi * radius
 
-
 # display results
 print(f"Area:\t\t{area}\nCircumference:\t{circumference}")
