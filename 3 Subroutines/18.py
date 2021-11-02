@@ -7,6 +7,12 @@
 #         number //= 10
 #     return sum
 
+# def sum_digits(number):
+#     sum = 0
+#     for digit in str(number):
+#         sum += int(digit)
+#     return sum
+
 def sum_digits(number):
     sum = 0
     for digit in map(int, str(number)):
