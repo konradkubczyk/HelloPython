@@ -2,9 +2,13 @@
 
 colors = ["yellow", "green", "blue", "purple", "red", "orange"]
 
-output_file = open("15.txt", "w")
+# output_file = open("15.txt", "w")
 
-for color in colors:
-    output_file.write(color + "\n")
+# for color in colors:
+#     output_file.write(color + "\n")
 
-output_file.close()
+# output_file.close()
+
+with open("15.txt", "w") as output_file:
+    for color in colors:
+        output_file.write(color + "\n")
