@@ -20,5 +20,5 @@ for n in array:
     if n > second_max and n < max:
         second_max = n
 
-print("Array:" + str(array))
+print("Array: " + str(array))
 print("Result: " + str(second_max))
