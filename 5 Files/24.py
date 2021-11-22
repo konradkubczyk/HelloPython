@@ -9,5 +9,9 @@
 # # complete the program code
 
 import re
+
 message = "Tuesday: 22C, Wednesday: 21C, Thursday: 26C "
-temperatures = re.findall("\d{2}",message)
+temperatures = re.findall("\d{1,2}", message)
+average_temperature = sum([int(temperature) for temperature in temperatures]) / len(temperatures)
+
+print(f"Temperatures: {'°C, '.join(temperatures)}°C\nAverage temperature: {average_temperature}°C")
