@@ -3,4 +3,4 @@
 with open("20.txt", "w") as file:
     for n in range(50):
         file.write(str(n + 1) + "\n")
-    print("File written successfully.")
+    print("File written successfully")
