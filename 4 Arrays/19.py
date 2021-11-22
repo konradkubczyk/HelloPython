@@ -7,11 +7,11 @@ array = [2, 3, 2, 5, 8, 1, 9, 8]
 unique_elements = []
 
 for selected_number in array:
-    occurences = 0
+    occurrences = 0
     for number in array:
         if number == selected_number:
-            occurences += 1
-            if occurences > 1:
+            occurrences += 1
+            if occurrences > 1:
                 break
     else:
         unique_elements.append(selected_number)
