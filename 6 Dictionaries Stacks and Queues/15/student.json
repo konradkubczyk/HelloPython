@@ -1,0 +1,13 @@
+{
+    "name": "John",
+    "surname": "Smith",
+    "gender": "male",
+    "graduate": false,
+    "grade_average": 4.75,
+    "hobbies": [
+        "programming",
+        "photography",
+        "art",
+        "music"
+    ]
+}
