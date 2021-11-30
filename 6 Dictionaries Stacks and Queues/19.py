@@ -15,7 +15,7 @@ stack = []
 
 operators = ["+", "-", "*", "/", "="]
 
-print(f"Allowed operators: {operators}\nSeparate arguments with space, \"=\" terminates the expression.\n")
+print(f"Allowed operators: {operators}\nSeparate arguments with spaces, \"=\" terminates the expression.\n")
 print("Enter an RPN expression: ", end="")
 
 for value in input().split(" "):
