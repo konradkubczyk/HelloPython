@@ -18,7 +18,6 @@ class TV():
             self.channel_no = channel_no
         else:
             print('Turn the TV on first in order to set a channel')
-        
 
 # a. Create a TV set
 tv = TV()
