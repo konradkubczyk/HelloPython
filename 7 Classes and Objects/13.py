@@ -3,7 +3,7 @@
 class TV():
     def __init__(self):
         self.is_on = False
-        self.channel_no = 0
+        self.channel_no = 1
         self.channels_list = []
     def turn_on(self):
         self.is_on = True
@@ -11,12 +11,12 @@ class TV():
         self.is_on = False
     def show_status(self):
         if self.is_on:
-            print(f'TV is on, channel {self.channel_no + 1}')
+            print(f'TV is on, channel {self.channel_no}')
         else:
             print('TV is off')
     def set_channel(self, channel_no):
         if self.is_on:
-            self.channel_no = channel_no - 1
+            self.channel_no = channel_no
         else:
             print('Turn the TV on first in order to set a channel')
     def set_channels(self, channels_list):
