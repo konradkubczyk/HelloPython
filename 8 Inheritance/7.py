@@ -33,7 +33,7 @@ class SMS(Message):
     def set_recipient_number(self, recipient_number):
         self.recipient_number = recipient_number
     def send(self):
-        print(f"Sending SMS...\nFrom:\t{self.sender_number}\nTo:\t{self.recipient_number}\n{self.message}")
+        print(f"Sending Email...\nFrom:\t{self.sender_number}\nTo:\t{self.recipient_number}\n{self.message}")
         
 
 class Email(Message):
