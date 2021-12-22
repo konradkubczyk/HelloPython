@@ -21,17 +21,10 @@
 from sms import SMS
 from email import Email
 
-sms = SMS()
-sms.set_sender_number(123456789)
-sms.set_recipient_number(987654321)
-sms.set_message("tEsT.")
+sms = SMS(123456789, 987654321, "tEsT.")
 sms.send()
 
 print()
 
-email = Email()
-email.set_sender_address("bob@example.com")
-email.set_recipient_address("alice@example.com")
-email.set_subject("Interesting message")
-email.set_message("tEsT.")
+email = Email("bob@example.com", "alice@example.com", "Interesting message", "tEsT.")
 email.send()
