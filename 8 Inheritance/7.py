@@ -33,7 +33,7 @@ class SMS(Message):
     def set_recipient_number(self, recipient_number):
         self.recipient_number = recipient_number
     def send(self):
-        print(f"Sending Email...\nFrom:\t{self.sender_number}\nTo:\t{self.recipient_number}\n{self.message}")
+        print(f"Sending SMS...\nFrom:\t{self.sender_number}\nTo:\t{self.recipient_number}\n{self.message}")
         
 
 class Email(Message):
@@ -48,7 +48,7 @@ class Email(Message):
     def set_subject(self, subject):
         self.subject = subject
     def send(self):
-        print(f"Sending SMS...\nFrom:\t {self.sender_address}\nTo:\t {self.recipient_address}\nSubject: {self.subject}\n{self.message}")
+        print(f"Sending Email...\nFrom:\t {self.sender_address}\nTo:\t {self.recipient_address}\nSubject: {self.subject}\n{self.message}")
 
 sms = SMS()
 sms.set_sender_number(123456789)
