@@ -18,37 +18,8 @@
 
 # Create a program, in which send one email and one SMS
 
-class Message():
-    def __init__(self):
-        self.message = ''
-    def set_message(self, message):
-        self.message = message[0].upper() + message[1:].lower() + " BYE."
-
-class SMS(Message):
-    def __init__(self):
-        self.sender_number = None
-        self.recipient_number = None
-    def set_sender_number(self, sender_number):
-        self.sender_number = sender_number
-    def set_recipient_number(self, recipient_number):
-        self.recipient_number = recipient_number
-    def send(self):
-        print(f"Sending SMS...\nFrom:\t{self.sender_number}\nTo:\t{self.recipient_number}\n{self.message}")
-        
-
-class Email(Message):
-    def __init__(self):
-        self.sender_address = None
-        self.recipient_address = None
-        self.subject = None
-    def set_sender_address(self, sender_address):
-        self.sender_address = sender_address
-    def set_recipient_address(self, recipient_address):
-        self.recipient_address = recipient_address
-    def set_subject(self, subject):
-        self.subject = subject
-    def send(self):
-        print(f"Sending Email...\nFrom:\t {self.sender_address}\nTo:\t {self.recipient_address}\nSubject: {self.subject}\n{self.message}")
+from sms import SMS
+from email import Email
 
 sms = SMS()
 sms.set_sender_number(123456789)
